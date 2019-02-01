@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <button class="main-nav__togle" type="button" name="togle-close-open">
+          <span class="visually-hidden">Закрыть или открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="search" action="https://echo.htmlacademy.ru" method="post">
+        <label class="searh__icon" for="search"></label>
+        <input class="search__field" id="search" type="search" name="search" placeholder="Поиск по сайту">
+      </form>
+
+      <p class="basket">
+        <a class="basket__link" href="#">
+          Корзина:
+          <output name="result-basket">пока пуста</output>
+        </a>
+      </p>
+    </header>
+
+    <main class="page-main">
+      <section class="catalog">
+        <header class="catalog__header">
+          <h1 class="catalog__title title">
+            <span class="visually-hidden">Интернет магазин "Мишка" -</span>
+            Каталог товаров
+          </h1>
+        </header>
+
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="catalog__card card" tabindex="0">
+              <a class="card__link" href="#">
+                <h2 class="card__title">
+                  Зайчик-попрыгайчик
+                </h2>
+                <img class="card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Милый вязанный зайчик-попрыгайчик">
+              </a>
+              <p class="card__content">
+                Рост 30 см, вес 200 г
+              </p>
+              <footer class="card__footer">
+                <p class="card__value">
+                  1 200 руб.
+                  <button class="card__basket" type="button" name="card__basket">
+                    <span class="visually-hidden">Заказать товар</span>
+                    <img class="card__basket-img" src="img/icon-cart.svg" alt="">
+                  </button>
+                </p>
+              </footer>
+            </article>
+          </li>
+
+          <li class="catalog__item">
+            <article class="catalog__card card" tabindex="0">
+              <a class="card__link" href="#">
+                <h2 class="card__title">
+                  Корзинка для белья
+                </h2>
+                <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Удобная и стильная вязанная корзинка для белья">
+              </a>
+              <p class="card__content">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <footer class="card__footer">
+                <p class="card__value">
+                  690 руб.
+                  <button class="card__basket" type="button" name="card__basket">
+                    <span class="visually-hidden">Заказать товар</span>
+                    <img class="card__basket-img" src="img/icon-cart.svg" alt="">
+                  </button>
+                </p>
+              </footer>
+            </article>
+          </li>
+
+          <li class="catalog__item">
+            <article class="catalog__card card" tabindex="0">
+              <a class="card__link" href="#">
+                <h2 class="card__title">
+                  Большая корзинка для игрушек
+                </h2>
+                <img class="card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая вязанная корзинка для любимых игрушек">
+              </a>
+              <p class="card__content">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <footer class="card__footer">
+                <p class="card__value">
+                  1 500 руб.
+                  <button class="card__basket" type="button" name="card__basket">
+                    <span class="visually-hidden">Заказать товар</span>
+                    <img class="card__basket-img" src="img/icon-cart.svg" alt="">
+                  </button>
+                </p>
+              </footer>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="manufacturing">
+        <article class="catalog__card card" tabindex="0">
+          <h2 class="card__title">
+            Процесс производства
+          </h2>
+            <img class="card__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео производства наших вязанных изделий">
+            <p class="card__content">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <footer class="card__footer">
+              <button class="card__button button" type="button" name="button">
+                Сделать заказ
+              </button>
+            </footer>
+        </article>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/?hl=ru" target="_blank">
+            <span class="visually-hidden">Мы в Инстаграм</span>
+            <img class="social__icon social__icon--instagram" src="img/icon-insta.svg" width="22" height="21" alt="">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <img class="social__icon social__icon--facebook" src="img/icon-fb.svg" width="15" height="28" alt="">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://https://twitter.com/htmlacademy_ru" target="_blank">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <img class="social__icon social__icon--twitter" src="img/icon-twitter.svg" width="23" height="20" alt="">
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden" lang="en">HTML Academy</span>
+            <img class="copyright__icon" src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
+          </a>
+      </div>
+    </footer>
+  </body>
+</html>
