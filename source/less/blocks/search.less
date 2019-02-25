@@ -1,0 +1,32 @@
+.search {
+  border-bottom: 1px solid #ececec;
+}
+
+.search__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 79px;
+
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 40px 30px;
+}
+
+.search__field {
+  border: none;
+
+  &::placeholder {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid #000000;
+  }
+}
