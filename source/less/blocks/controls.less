@@ -1,0 +1,74 @@
+.controls {
+  display: flex;
+}
+
+.controls__arrow {
+  position: relative;
+
+  width: 130px;
+  min-height: 52px;
+  margin-bottom: 38px;
+  border: 1px solid #ececec;
+
+  background-color: #ffffff;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 38px;
+
+    width: 50px;
+    height: 4px;
+
+    background-color: #000000;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    left: 38px;
+
+    width: 20px;
+    height: 20px;
+    border-left: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+
+    transform: rotate(45deg);
+  }
+
+  &--next {
+    width: 129px;
+    border-left: 0;
+
+    &::after {
+      top: 16px;
+      left: 68px;
+
+      transform: rotate(-135deg);
+    }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: #666666;
+  }
+
+  &:active::before {
+    background-color: #b2b2b2;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    border-color: #666666;
+  }
+
+  &:active::after {
+    border-color: #b2b2b2;
+  }
+}
