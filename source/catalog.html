@@ -60,10 +60,10 @@
                 </h2>
                 <img class="card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Милый вязанный зайчик-попрыгайчик">
               </a>
-              <p class="card__content">
-                Рост 30 см, вес 200 г
-              </p>
-              <footer class="card__footer">
+              <div class="card__content">
+                <p class="card__parametr">
+                  Рост 30 см, вес 200 г
+                </p>
                 <p class="card__value">
                   1 200 руб.
                   <button class="card__basket" type="button" name="card__basket">
@@ -71,7 +71,7 @@
                     <img class="card__basket-img" src="img/icon-cart.svg" alt="">
                   </button>
                 </p>
-              </footer>
+              </div>
             </article>
           </li>
 
@@ -83,10 +83,10 @@
                 </h2>
                 <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Удобная и стильная вязанная корзинка для белья">
               </a>
-              <p class="card__content">
-                Диаметр 15 см, высота 10 см
-              </p>
-              <footer class="card__footer">
+              <div class="card__content">
+                <p class="card__parametr">
+                  Диаметр 15 см, высота 10 см
+                </p>
                 <p class="card__value">
                   690 руб.
                   <button class="card__basket" type="button" name="card__basket">
@@ -94,7 +94,7 @@
                     <img class="card__basket-img" src="img/icon-cart.svg" alt="">
                   </button>
                 </p>
-              </footer>
+              </div>
             </article>
           </li>
 
@@ -106,10 +106,10 @@
                 </h2>
                 <img class="card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая вязанная корзинка для любимых игрушек">
               </a>
-              <p class="card__content">
-                Диаметр 30 см, высота 30 см
-              </p>
-              <footer class="card__footer">
+              <div class="card__content">
+                <p class="card__parametr">
+                  Диаметр 30 см, высота 30 см
+                </p>
                 <p class="card__value">
                   1 500 руб.
                   <button class="card__basket" type="button" name="card__basket">
@@ -117,26 +117,31 @@
                     <img class="card__basket-img" src="img/icon-cart.svg" alt="">
                   </button>
                 </p>
-              </footer>
+              </div>
             </article>
           </li>
         </ul>
       </section>
 
       <section class="manufacturing">
-        <article class="manufacturing__card card" tabindex="0">
-          <h2 class="card__title">
+        <article class="manufacturing__card card-video" tabindex="0">
+          <h2 class="card-video__title">
             Процесс производства
           </h2>
-            <img class="card__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео производства наших вязанных изделий">
-            <p class="card__content">
+          <div class="card-video__video">
+            <img class="card-video__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео производства наших вязанных изделий">
+            <button class="card-video__play" type="button" name="video-play">
+              <img class="card-video__play-img" src="img/icon-play.svg" alt="play-video">
+            </button>
+          </div>
+          <div class="card-video__content">
+            <p class="card-video__text">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
-            <footer class="card__footer">
-              <button class="card__button button" type="button" name="button">
-                Сделать заказ
-              </button>
-            </footer>
+            <button class="card-video__button button" type="button" name="button">
+              Сделать заказ
+            </button>
+          </div>
         </article>
       </section>
     </main>
@@ -166,11 +171,13 @@
       </ul>
 
       <div class="page-footer__copyright copyright">
+        <p class="copyright__content">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden" lang="en">HTML Academy</span>
             <img class="copyright__icon" src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
           </a>
+        </p>
       </div>
     </footer>
   </body>
