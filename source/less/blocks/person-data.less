@@ -1,0 +1,41 @@
+.person-data {
+  position: relative;
+
+  margin-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.person-data__img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.person-data__input {
+  display: block;
+  width: 260px;
+  margin-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  color: rgba(68, 68, 68, 1);
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.person-data__label:hover .person-data__input {
+  border-color: #62d1ba;
+}
+
+.person-data__input:focus {
+  border-color: #62d1ba;
+}
