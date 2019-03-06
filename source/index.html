@@ -239,5 +239,35 @@
         </p>
       </div>
     </footer>
+
+    <section class="card-add-basket pop-up">
+      <h2 class="pop-up__title title"><span class="visually-hidden">Карточка:</span> Добавить  в корзину</h2>
+
+      <form class="pop-up__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+        <p class="pop-up__text">
+          Выберите размер:
+        </p>
+
+        <ul class="pop-up__list">
+          <li class="pop-up__item">
+            <input class="pop-up__radio visually-hidden" id="size-S" type="radio" name="size" value="S" checked>
+            <label class="pop-up__label" for="size-S">S</label>
+          </li>
+
+          <li class="pop-up__item">
+            <input class="pop-up__radio visually-hidden" id="size-M" type="radio" name="size" value="M">
+            <label class="pop-up__label" for="size-M">M</label>
+          </li>
+
+            <li class="pop-up__item">
+              <input class="pop-up__radio visually-hidden" id="size-L" type="radio" name="size" value="L">
+              <label class="pop-up__label" for="size-L">L</label>
+            </li>
+        </ul>
+
+        <button class="pop-up__button button button--green" type="submit" name="submit-pop-up">Добавить</button>
+      </form>
+    </section>
+
   </body>
 </html>
