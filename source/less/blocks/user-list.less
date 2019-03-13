@@ -1,0 +1,45 @@
+.user-list {
+  .list-reset();
+}
+
+.user-list__item {
+  &--basket {
+    border-bottom: 1px solid #ececec;
+
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+  }
+}
+
+.user-list__link {
+  display: block;
+  padding: 27px 0;
+  padding-left: 76px;
+
+  color: inherit;
+
+  .link-status();
+}
+
+@media (min-width: 768px) {
+  .user-list {
+    display: flex;
+    order: -1;
+  }
+
+  .user-list__item {
+    &--basket {
+      background-position: 32px 34px;
+    }
+  }
+
+
+  .user-list__link {
+    width: 314px;
+    padding: 31px 0;
+    padding-right: 50px;
+
+    text-align: right;
+  }
+}
