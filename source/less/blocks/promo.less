@@ -86,7 +86,6 @@
       bottom: -14px;
       z-index: 10;
 
-      display: block;
       width: 768px;
       height: 24px;
 
@@ -131,6 +130,47 @@
 
     &--toys {
       background-position: 240px 32px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .promo {
+    &::after {
+      bottom: -19px;
+      left: 0;
+
+      width: 1250px;
+      height: 34px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat-x: repeat;
+      background-position: 0 0;
+      background-size: auto 37px;
+    }
+  }
+  .promo__image {
+    left: 50px;
+  }
+
+  .promo__title {
+    left: 291px;
+  }
+
+  .promo__footer {
+    width: 1050px;
+  }
+
+  .promo__link {
+    padding-left: 37px;
+    padding-top: 27px;
+
+    &--interior {
+      background-position: 448px 30px;
+    }
+
+    &--toys {
+      background-position: 430px 32px;
     }
   }
 }
