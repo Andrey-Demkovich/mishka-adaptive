@@ -13,6 +13,7 @@
   z-index: -1;
 
   display: block;
+  width: 575px;
   max-width: none;
   margin-bottom: -91px;
 }
@@ -67,6 +68,69 @@
     &:active {
       background-color: #46c1ae;
       color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .promo {
+    position: relative;
+    z-index: -2;
+
+    background-color: #f9f9f9;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -14px;
+      z-index: 10;
+
+      display: block;
+      width: 768px;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: auto 23px;
+    }
+  }
+
+  .promo__title {
+    top: 153px;
+    left: 50px;
+  }
+
+  .promo__image {
+    top: -1px;
+    left: -191px;
+    width: auto;
+
+    margin-bottom: -120px;
+  }
+
+  .promo__footer {
+    display: flex;
+
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .promo__link {
+    width: 50%;
+    padding-left: 35px;
+    padding-top: 28px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior {
+      background-position: 257px 30px;
+    }
+
+    &--toys {
+      background-position: 240px 32px;
     }
   }
 }
