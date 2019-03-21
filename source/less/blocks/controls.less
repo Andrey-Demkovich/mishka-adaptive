@@ -72,3 +72,24 @@
     border-color: #b2b2b2;
   }
 }
+
+@media (min-width: 768px) {
+  .controls__arrow {
+    width: 84px;
+    min-height: 52px;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .controls__arrow::before {
+    left: 13px;
+  }
+
+  .controls__arrow::after {
+    left: 15px;
+  }
+
+  .controls__arrow--next::after {
+    left: 40px;
+  }
+}

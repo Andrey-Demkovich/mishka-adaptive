@@ -1,7 +1,27 @@
 .rewiews {
+  position: relative;
+
   width: 260px;
   margin: 0 auto;
-  padding-top: 52px;
+  margin-top: 52px;
+  padding-bottom: 6px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-repeat-x: repeat;
+    background-position: 8px 0;
+    background-size: auto 6.5px;
+  }
 }
 
 .rewiews__title {
@@ -20,6 +40,7 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  font-style: normal;
   color: #000000;
 }
 
@@ -50,4 +71,107 @@
 
 .rewiews__write {
   margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  .rewiews {
+    width: 100%;
+    margin-top: 58px;
+    padding-top: 78px;
+    padding-bottom: 130px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &::after {
+      left: 0;
+
+      width: 768px;
+      height: 17px;
+
+      background-position: 16px 0;
+      background-size: auto 15.5px;
+    }
+  }
+
+  .rewiews__title {
+    margin-bottom: 48px;
+    margin-left: 47px;
+  }
+
+  .rewiews__slider {
+    position: relative;
+
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .rewiews__content {
+    margin-bottom: 55px;
+
+    font-size: 17px;
+  }
+
+  .rewiews__author {
+    font-size: 18px;
+  }
+
+  .rewiews__email {
+    margin: 0;
+  }
+
+  .rewiews__controls {
+    position: absolute;
+    right: -1px;
+    bottom: 2px;
+  }
+
+  .rewiews__write {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+
+    width: 175px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .rewiews {
+    width: 1050px;
+    margin-top: 65px;
+    padding-top: 71px;
+    padding-bottom: 185px;
+    padding-left: 175px;
+
+    &::after {
+      width: 100%;
+      height: 23px;
+
+      background-position: 25px 0;
+      background-size: auto 21px;
+    }
+  }
+
+  .rewiews__title {
+    margin-left: 0;
+  }
+
+  .rewiews__slider {
+    margin-left: 0;
+  }
+
+  .rewiews__content {
+    width: 770px;
+    margin-bottom: 37px;
+  }
+
+  .rewiews__controls {
+    right: -207px;
+  }
+
+  .rewiews__write {
+    right: 0;
+  }
 }
