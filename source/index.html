@@ -83,36 +83,45 @@
 
       <section class="product-week">
         <h2 class="product-week__title">Товар недели</h2>
+
         <article class="product-week__article">
           <header class="product-week__header">
             <h3 class="product-week__subtitle title">Вязаные корзинки</h3>
           </header>
-          <p class="product-week__content">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="product-week__table table-product">
-            <tr class="table-product__row">
-              <td class="table-product__data table-product__data--parameter">Цвет:</td>
-              <td class="table-product__data table-product__data--property">«Тиффани»/серый</td>
-            </tr>
-            <tr class="table-product__row">
-              <td class="table-product__data table-product__data--parameter">Диаметр:</td>
-              <td class="table-product__data table-product__data--property">25 см</td>
-            </tr>
-            <tr class="table-product__row">
-              <td class="table-product__data table-product__data--parameter">Высота:</td>
-              <td class="table-product__data table-product__data--property">15 см</td>
-            </tr>
-          </table>
-          <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Красивый и яркий набор из трех вязанных корзинок">
-          <footer class="product-week__footer">
-            <p class="product-week__value">Цена: 990 руб.</p>
-            <a class="product-week__order button" href="#">Заказать</a>
-          </footer>
+
+          <div class="product-week__container">
+            <p class="product-week__content">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+
+            <table class="product-week__table table-product">
+              <tr class="table-product__row">
+                <td class="table-product__data table-product__data--parameter">Цвет:</td>
+                <td class="table-product__data table-product__data--property">«Тиффани»/серый</td>
+              </tr>
+              <tr class="table-product__row">
+                <td class="table-product__data table-product__data--parameter">Диаметр:</td>
+                <td class="table-product__data table-product__data--property">25 см</td>
+              </tr>
+              <tr class="table-product__row">
+                <td class="table-product__data table-product__data--parameter">Высота:</td>
+                <td class="table-product__data table-product__data--property">15 см</td>
+              </tr>
+            </table>
+
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" alt="Красивый и яркий набор из трех вязанных корзинок">
+            </picture>
+
+            <footer class="product-week__footer">
+              <p class="product-week__value">Цена: 990 руб.</p>
+              <a class="product-week__order button" href="#">Заказать</a>
+            </footer>
+          </div>
         </article>
       </section>
-
-      <img class="image-split" src="img/bg-zigzag-line.svg" width="319" height="6" alt="Новый раздел страницы">
 
       <section class="features">
         <h2 class="features__title title">
