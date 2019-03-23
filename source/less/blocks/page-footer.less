@@ -4,7 +4,56 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__social {
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 27px;
+}
+
+.page-footer__copyright {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    align-items: flex-start;
+
+    padding-top: 47px;
+    padding-bottom: 52px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    height: 45px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    margin-top: 13px;
+    margin-left: 159px;
+    margin-right: auto;
+  }
+
+  .page-footer__copyright {
+    align-self: flex-end;
+
+    margin: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .page-footer__social {
+    margin-left: 350px;
+  }
 }
