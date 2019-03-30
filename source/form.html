@@ -156,67 +156,58 @@
           </fieldset>
 
           <fieldset class="form__fildset form__fildset--name">
-            <legend class="form__label form__legend">
-              <abbr title="Фамилия Имя Отчество">ФИО</abbr>
+            <legend class="form__legend">
+              <abbr class="form__abbr" title="Фамилия Имя Отчество">ФИО</abbr>
             </legend>
               <ul class="form__list person-data">
                 <li class="person-data__item">
-                  <label class="person-data__label" for="name">Имя:
-                    <input class="person-data__input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
-                  </label>
+                  <label class="person-data__label person-data__label--name" for="name">Имя:</label>
+                  <input class="person-data__input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
                 </li>
 
                 <li class="person-data__item">
-                  <label class="form__label person-data__label" for="surname">Фамилия:
-                    <input class="person-data__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
-                  </label>
+                  <label class="form__label person-data__label person-data__label--name" for="surname">Фамилия:</label>
+                  <input class="person-data__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
                 </li>
 
                 <li class="person-data__item">
-                  <label class="form__label person-data__label" for="patronymic">Отчество:
-                    <input class="person-data__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
-                  </label>
+                  <label class="form__label person-data__label person-data__label--name" for="patronymic">Отчество:</label>
+                  <input class="person-data__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
                 </li>
               </ul>
           </fieldset>
 
           <fieldset class="form__fildset form__fildset--contacts">
             <legend class="form__legend">
-              Тел
+              <label class="form__label person-data__label person-data__label--tel" for="tel">Тел</label>
             </legend>
-            <ul class="form__list person-data">
+            <ul class="form__list person-data person-data--contacts">
               <li class="person-data__item">
-                <label class="form__label person-data__label person-data__label--tel" for="tel">
-                  <img class="person-data__img" src="img/icon-phone.svg" alt="Введите ваш номер телефона">
-                  <input class="person-data__input" id="tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                </label>
+                <img class="person-data__img" src="img/icon-phone.svg" alt="Введите ваш номер телефона">
+                <input class="person-data__input person-data__input--contacts" id="tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__fildset form__fildset--contacts">
-            <legend class="form__legend">
-              E-mail
+          <fieldset class="form__fildset form__fildset--contacts form__fildset--email">
+            <legend class="form__legend form__legend--email">
+              <label class="form__label person-data__label person-data__label--email" for="email">E-mail</label>
             </legend>
-            <ul class="form__list person-data">
+            <ul class="form__list person-data person-data--contacts person-data--email">
               <li class="person-data__item">
-                <label class="form__label person-data__label person-data__label--email" for="email">
-                  <img class="person-data__img" src="img/icon-mail.svg" alt="Введите ваш номер телефона">
-                  <input class="person-data__input" id="email" type="email" name="email" placeholder="Ваш Email*">
-                </label>
+                <img class="person-data__img" src="img/icon-mail.svg" alt="Введите ваш номер телефона">
+                <input class="person-data__input person-data__input--contacts" id="email" type="email" name="email" placeholder="Ваш Email*">
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form__fildset form__fildset--wishes">
             <legend class="form__legend">
-              Доп
+              <label class="form__label wishes__label" for="wishes__textarea">Доп</label>
             </legend>
             <ul class="form__list wishes">
               <li class="wishes__item">
-                <label class="form__label wishes__label">
-                  <textarea class="wishes__textarea" name="wishes" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
-                </label>
+                <textarea class="wishes__textarea" name="wishes" id="wishes__textarea" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
               </li>
             </ul>
           </fieldset>

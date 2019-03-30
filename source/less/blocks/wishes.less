@@ -18,6 +18,9 @@
   padding-right: 5px;
   border: 2px solid #000000;
 
+  font-size: 17px;
+  line-height: 18px;
+
   color: rgba(68, 68, 68, 1);
 
   &::placeholder {
@@ -25,10 +28,25 @@
   }
 }
 
-.wishes__label:hover .wishes__textarea {
+.wishes__textarea:hover {
   border-color: #62d1ba;
 }
 
 .wishes__textarea:focus {
   border-color: #62d1ba;
+}
+
+@media (min-width: 768px) {
+  .wishes__textarea {
+    width: 100%;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .wishes {
+    width: 700px;
+  }
 }
