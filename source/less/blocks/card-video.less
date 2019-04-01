@@ -42,15 +42,28 @@
 
 .card-video__play {
   position: absolute;
-  top: 37px;
-  left: 80px;
+  top: 50%;
+  left: 50%;
 
+  margin-top: -51px;
+  margin-left: -50px;
   padding: 0;
   border: none;
 
   background-color: transparent;
 
   cursor: pointer;
+
+  &:hover .card-video__play-img,
+  &:focus .card-video__play-img {
+    transform: scale(1.2, 1.2);
+  }
+
+  &:active .card-video__play-img {
+    transform: scale(0.8, 0.8);
+
+    opacity: 0.7;
+  }
 }
 
 .card-video__content {
@@ -101,8 +114,7 @@
   }
 
   .card-video__play {
-    top: 188px;
-    left: 283px;
+    margin-top: -58px;
   }
 
   .card-video__content {
@@ -150,8 +162,7 @@
   }
 
   .card-video__play {
-    top: 189px;
-    left: 291px;
+    margin-top: -38px;
   }
 
   .card-video__content {
